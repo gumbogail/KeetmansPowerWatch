@@ -38,5 +38,17 @@ namespace KeetmansPowerWatch
             MainDashboard MD = new MainDashboard();
             MD.Show();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            LOGIN log = new LOGIN();
+            log.Show();
+        }
     }
 }

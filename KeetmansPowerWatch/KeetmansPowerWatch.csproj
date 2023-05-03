@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountDetails.Designer.cs">
+      <DependentUpon>AccountDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="average consumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="average consumption.Designer.cs">
+      <DependentUpon>average consumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </Compile>
     <Compile Include="SIGN UP.cs">
       <SubType>Form</SubType>
@@ -66,11 +90,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountDetails.resx">
+      <DependentUpon>AccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="average consumption.resx">
+      <DependentUpon>average consumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +116,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SIGN UP.resx">
       <DependentUpon>SIGN UP.cs</DependentUpon>
@@ -96,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\775baa87-1f34-4fff-a02e-9882667f2ddb-removebg-preview 1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
